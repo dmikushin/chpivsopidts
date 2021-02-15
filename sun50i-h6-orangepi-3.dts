@@ -916,7 +916,7 @@
 			phy-names = "usb";
 			extcon = <0x32 0x00>;
 			status = "okay";
-			dr_mode = "host";
+			dr_mode = "otg";
 			phandle = <0x6e>;
 		};
 
