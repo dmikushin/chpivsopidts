@@ -16,3 +16,11 @@ sun50iw6-cherrypi.dts:2515.11-2532.5: Warning (unique_unit_address): /soc@030000
 sun50iw6-cherrypi.dts:2560.11-2567.5: Warning (unique_unit_address): /soc@03000000/usbc1@0: duplicate unit-address (also used in node /soc@03000000/usbc2@0)
 ```
 
+## Recovery
+
+We modify the original boot.cmd, in order to introduce the recovery option. With the following U-boot command, an old working version of device tree is used instead of the broken one:
+
+```
+setenv recovery=recovery.dtb
+```
+
