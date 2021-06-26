@@ -725,7 +725,7 @@
 			reg-io-width = <4>;
 			clocks = <&ccu CLK_BUS_UART3>;
 			resets = <&ccu RST_BUS_UART3>;
-			status = "disabled";
+			status = "okay";
 		};
 
 		i2c0: i2c@5002000 {

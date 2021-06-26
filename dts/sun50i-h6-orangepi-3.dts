@@ -10,12 +10,13 @@
 #include <dt-bindings/gpio/gpio.h>
 
 / {
-	model = "OrangePi 3";
+	model = "Shenzhen LC Tech CherryPi H6";
 	compatible = "xunlong,orangepi-3", "allwinner,sun50i-h6";
 
 	aliases {
 		serial0 = &uart0;
 		serial1 = &uart1;
+		serial3 = &uart3;
 		ethernet0 = &emac;
 	};
 
@@ -372,6 +373,12 @@
 	pinctrl-0 = <&uart1_pins>, <&uart1_rts_cts_pins>;
 	uart-has-rtscts;
 	status = "okay";
+};
+
+&uart3 {
+        pinctrl-names = "default";
+        pinctrl-0 = <&uart3_pins>;
+        status = "okay";
 };
 
 &usb2otg {
