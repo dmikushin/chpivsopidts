@@ -24,3 +24,6 @@ We modify the original boot.cmd, in order to introduce the recovery option. With
 setenv recovery=recovery.dtb
 ```
 
+## GPIO Pinout
+
+<img src="CherryPi-H6-GPIO.jpg">
