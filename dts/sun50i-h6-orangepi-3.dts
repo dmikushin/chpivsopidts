@@ -136,7 +136,7 @@
 };
 
 &hdmi {
-	status = "okay";
+	status = "disabled";
 };
 
 &hdmi_out {
@@ -222,7 +222,7 @@
 };
 
 &hdmi {
-	status = "okay";
+	status = "disabled";
 };
 
 &hdmi_out {
