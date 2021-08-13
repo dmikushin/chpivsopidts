@@ -27,3 +27,7 @@ setenv recovery=recovery.dtb
 ## GPIO Pinout
 
 <img src="CherryPi-H6-GPIO.jpg">
+
+## Further reading
+
+[Device Tree Customization](https://developer.toradex.com/device-tree-customization)
