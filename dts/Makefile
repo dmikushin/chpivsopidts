@@ -19,7 +19,7 @@ sun50i-h6-orangepi-3.dtb: sun50i-h6-orangepi-3.dts \
 	dtc -I dts -O dtb -o $@ -b 0 -i. -f $<.preprocessed -Wno-unit_address_format -Wno-simple_bus_reg -Wno-unit_address_vs_reg -Wno-unit_address_format -Wno-avoid_unnecessary_addr_size -Wno-alias_paths -Wno-graph_child_address -Wno-simple_bus_reg -Wno-unique_unit_address -Wno-pci_device_reg
 
 deploy: sun50i-h6-orangepi-3.dtb
-	adb push $< /boot/dtb-5.4.65-sunxi64/allwinner/$<
+	sudo cp $< /boot/dtb-5.4.65-sunxi64/allwinner/$<
 
 clean:
 	rm -rf sun50i-h6-orangepi-3.dtb sun50i-h6-orangepi-3.dts.preprocessed
