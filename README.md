@@ -24,9 +24,20 @@ We modify the original boot.cmd, in order to introduce the recovery option. With
 setenv recovery=recovery.dtb
 ```
 
-## GPIO Pinout
+## CherryPi H6 GPIO Pinout
 
 <img src="CherryPi-H6-GPIO.jpg">
+
+## OrangePi 3 (Allwinner H6)
+
+<img src="OrangePi-3-H6-GPIO.jpg">
+
+## Current state
+
+In `dts` folder we made the following changes to the reference Orange Pi device tree:
+
+* Enabling UART interface on GPIO pins (apparently, the only one UART interface that could work on GPIO pins; there is also `r_uart` interface, but we could not get it to work)
+* Disabling interfaces we are not using in our CherryPi application, such as HDMI and bluetooth
 
 ## Further reading
 
